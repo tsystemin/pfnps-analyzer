@@ -48,6 +48,7 @@
         <activity
             android:name=".TopPerformingFunds"
             android:label="@string/title_activity_top_performing_funds"
+            android:screenOrientation="landscape"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
