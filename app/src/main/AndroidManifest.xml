@@ -45,5 +45,14 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".TopPerformingFunds"
+            android:label="@string/title_activity_top_performing_funds"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.co.tsystem.pfnps_analyzer1.MainActivity" />
+        </activity>
     </application>
+
 </manifest>

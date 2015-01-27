@@ -12,13 +12,13 @@
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
+
         <fragment
             android:id="@+id/adFragment"
             android:name="in.co.tsystem.pfnps_analyzer1.MainActivity$AdFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             tools:layout="@layout/fragment_ad" />
     </RelativeLayout>
 

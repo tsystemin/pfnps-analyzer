@@ -64,10 +64,46 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+        try {
+            switch (position) {
+                case 0:
+                    Intent intent = new Intent(MainActivity.this, TopPerformingFunds.class);
+                    startActivity(intent);
+                    break;
+                case 1:
+                    //intent = new Intent(MainActivity.this, IndividualFundDetails.class);
+                    //startActivity(intent);
+                    break;
+                case 2:
+                    //intent = new Intent(MainActivity.this, CompareFundsGraphically.class);
+                    //startActivity(intent);
+                    break;
+                case 3:
+                    //intent = new Intent(MainActivity.this, CompareFundsTable.class);
+                    //startActivity(intent);
+                    break;
+                case 4:
+                    //intent = new Intent(MainActivity.this, Feedback.class);
+                    //startActivity(intent);
+                    break;
+                case 5:
+                    //intent = new Intent(MainActivity.this, Settings.class);
+                    //startActivity(intent);
+                    break;
+                default:
+                    break;
+            }
+        }
+        catch (Exception e) {
+            super.onStop();
+        }
+        finally {
+
+            android.app.FragmentManager fragmentManager = getFragmentManager();
+            //fragmentManager.beginTransaction()
+            //        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1 ))
+            //        .commit();
+        }
     }
 
     public void onSectionAttached(int number) {
