@@ -48,11 +48,15 @@
         <activity
             android:name=".TopPerformingFunds"
             android:label="@string/title_activity_top_performing_funds"
-            android:screenOrientation="landscape"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.co.tsystem.pfnps_analyzer1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".IndividualFundDetails"
+            android:label="@string/title_activity_individual_fund_details" >
         </activity>
     </application>
 

@@ -20,5 +20,6 @@
     <string name="title_activity_top_performing_funds">TopPerformingFunds</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_individual_fund_details">IndividualFundDetails</string>
 
 </resources>
