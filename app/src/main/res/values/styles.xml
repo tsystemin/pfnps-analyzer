@@ -5,9 +5,6 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
-        <item name="android:minWidth">0dip</item>
-        <item name="android:paddingStart">0dip</item>
-        <item name="android:paddingEnd">0dip</item>
     </style>
 
 </resources>

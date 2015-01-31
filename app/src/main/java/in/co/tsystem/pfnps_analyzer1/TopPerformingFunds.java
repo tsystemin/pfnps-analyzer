@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.LinearLayout;
-
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
 import org.achartengine.model.XYMultipleSeriesDataset;
@@ -56,6 +55,7 @@ public class TopPerformingFunds extends Activity {
             fill.setColor(Color.GREEN);
             mCurrentRenderer.addFillOutsideLine(fill);
             mChart = ChartFactory.getCubeLineChartView(this, mDataset, mRenderer, 0.3f);
+            mChart.scrollTo(100, 0);
             layout.addView(mChart);
         } else {
             mChart.repaint();
