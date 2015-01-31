@@ -87,8 +87,8 @@ public class MainActivity extends ActionBarActivity
                     startActivity(intent);
                     break;
                 case 1:
-                    //intent = new Intent(MainActivity.this, IndividualFundDetails.class);
-                    //startActivity(intent);
+                    intent = new Intent(MainActivity.this, IndividualFundDetails.class);
+                    startActivity(intent);
                     break;
                 case 2:
                     //intent = new Intent(MainActivity.this, CompareFundsGraphically.class);
